@@ -1,8 +1,11 @@
 @charset "UTF-8"
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
+</style>
 
 body{
 
-    background-color:#929292;
+    background-color:#6b4444;
     color:rgba(0, 0, 0, 1);
 }
 div#interface {
@@ -25,7 +28,7 @@ header#cabecalho {
     padding: 0px;
 }
 header#cabecalho h1{
-    font-family: Arial, sans-serif;
+    font-family: 'Edu TAS Beginner', cursive;
     font-size: 30pt;
     color: #606060;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
@@ -33,7 +36,7 @@ header#cabecalho h1{
     margin-bottom: 0px;
 }
 header#cabecalho h2 {
-    font-family: Arial, sans-serif;
+    font-family: 'Edu TAS Beginner', cursive;
     font-size: 15pt;
     color: #888888;
     margin-top: 0px;
@@ -81,7 +84,7 @@ nav#menu ul{
     text-transform: uppercase ;
     position:absolute;
     top: -20px;
-    left: 800px;
+    left: 600px;
 }
 nav#menu li{
     display: inline-block;
@@ -107,5 +110,33 @@ nav#menu a{
 nav#menu a:hover{
     color: rgb(233, 255, 255);
 }
+section#corpo {
+    display: block;
+    width: 400px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+}
+table#tabelainfo {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+table#tabelainfo td{
+    border: 1px solid #606060;
+    padding: 10px;
+}
 
-
+aside#lateral {
+    display: block;
+    width: 370px;
+    float: right;
+}
+footer#rodape {
+    clear: both;
+    border-top: 1px solid #606060;
+}
+footer#rodape p{
+    text-align: center;
+}
