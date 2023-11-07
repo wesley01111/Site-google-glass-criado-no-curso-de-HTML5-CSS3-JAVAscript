@@ -8,6 +8,11 @@
     <link rel="stylesheet" type="text/css"     href="_css/style.css">
     
 </head>
+<script>
+    function mudaFoto (foto){
+        document.getElementById("icone").src = foto;
+    }
+</script>
 <body>
     <div id="interface">
         <header id="cabecalho">
@@ -23,11 +28,11 @@
    <nav id="menu">
      <h1> Menu Principal</h1>
          <ul>
-            <li><a href="index.html"> Home</a> </li>
-            <li><a href="specs.html">Especificações</a> </li>
-            <li><a href="fotos.html">Fotos</a> </li>
-            <li><a href="multimidia.html"> Multimídia</a></li>
-            <li><a href="fale-conosco.html">Fale conosco</a> </li>
+            <li onmousemove="mudaFoto('projeto-glass-html5/_imagens/home.png')"onmouseout="mudaFoto('E:/projetos DEV/site--glass/projeto-glass-html5/_imagens/glass-oculos-preto-med.png')"><a href="index.html"> Home</a> </li>
+            <li onmousemove="mudaFoto('projeto-glass-html5/_imagens/especificacoes.png')"onmouseout="mudaFoto('E:/projetos DEV/site--glass/projeto-glass-html5/_imagens/glass-oculos-preto-med.png')"><a href="specs.html">Especificações</a> </li>
+            <li onmousemove="mudaFoto('projeto-glass-html5/_imagens/fotos.png')"onmouseout="mudaFoto('E:/projetos DEV/site--glass/projeto-glass-html5/_imagens/glass-oculos-preto-med.png')"><a href="fotos.html">Fotos</a> </li>
+            <li onmousemove="mudaFoto('projeto-glass-html5/_imagens/multimidia.png')"onmouseout="mudaFoto('E:/projetos DEV/site--glass/projeto-glass-html5/_imagens/glass-oculos-preto-med.png')"><a href="multimidia.html"> Multimídia</a></li>
+            <li onmousemove="mudaFoto('projeto-glass-html5/_imagens/contato.png')"onmouseout="mudaFoto('E:/projetos DEV/site--glass/projeto-glass-html5/_imagens/glass-oculos-preto-med.png')"><a href="fale-conosco.html">Fale conosco</a> </li>
         </ul>
     </nav>  
         </header>
