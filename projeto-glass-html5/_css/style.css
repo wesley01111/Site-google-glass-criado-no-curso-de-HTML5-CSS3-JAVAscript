@@ -9,7 +9,7 @@ body{
     color:rgba(0, 0, 0, 1);
 }
 div#interface {
-    width: 800px;
+    width: 1000px;
     background-color: #ffffff;
     margin: -20px auto 0px auto;
     box-shadow:10px 10px 10px 10px rgba(0, 0, 0, .5) ;
@@ -53,7 +53,7 @@ header#cabecalho h2 {
 
 header#cabecalho img#icone{
     position: absolute;
-    left: 65%;
+    left: 75%;
     top: 50px;
 }
 
@@ -117,7 +117,7 @@ nav#menu a:hover{
 }
 section#corpo {
     display: block;
-    width: 400px;
+    width: 600px;
     float: left;
     border-right: 1px solid #606060;
     padding-right: 15px;

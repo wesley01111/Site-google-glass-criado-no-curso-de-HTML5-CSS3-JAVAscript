@@ -10,7 +10,7 @@ body{
 }
 div#interface {
     width: 800px;
-    background-color: #ffffff;
+    background-color: #5a5656;
     margin: -20px auto 0px auto;
     box-shadow:10px 10px 10px 10px rgba(0, 0, 0, .5) ;
     padding: 10px 10px 10px 10px;
