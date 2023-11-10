@@ -1,0 +1,22 @@
+@charset "TIUF-8";
+
+ div#tv-radio {
+    width: 200px;
+    height: 580px;
+    margin: auto;
+}
+audio#musica {
+    display: block;
+    position: relative;
+    left: 173px;
+    top: 1070px;
+    width: 300px;
+
+}
+video#filme {
+    display: block;
+    position: relative;
+    left: -330px;
+    top: 650px;
+    width: 475px;
+}
