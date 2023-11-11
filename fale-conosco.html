@@ -47,20 +47,43 @@
     <p>Senha:<input type="password" name="asenha" id="bsenha" size="8" maxlength="8" placeholder="8 dígitos">
     <p> E-mail:<input type="email" name="aimail" id="bimail" placeholder="@gmail.com"></p>
    <fieldset id="sexo">  
-    <legend>Sexo:</legend>
-       <input type="radio" name="asex" id="bmasc">  <label for="bmasc"> Masculino</label><br>
-       <input type="radio" name="asex" id="bfem"> <label for="bfem">Feminino</label>
+        <legend>Sexo:</legend>
+        <input type="radio" name="asex" id="bmasc">  <label for="bmasc"> Masculino</label><br>
+        <input type="radio" name="asex" id="bfem"> <label for="bfem">Feminino</label>
     </fieldset >
     <p> Data de Nascimento:<input type="date" name="adata" id="bdata"></p>
 </fieldset>
 
 <fieldset id="endereço">
     <legend> Endereço do Usuário</legend>
-        <p>Logradouro:<input type="text" name="alogra" id="blogra" placeholder="Rua,Beco,Numero,Bairro" ></p>
+        <p>Logradouro:<input type="text" name="alogra" id="blogra" size="10" placeholder="Rua,Beco,Numero,Bairro" ></p>
         <p>Número: <input type="number" name="
-            anumero" id="bnumero"></p>
-        <p> Estado:<input type="text" name="aestado" id="bestado"></p>
-        <p>Cidade:<input type="text" name="acidade" id="bcidade"> </p>
+            anumero" id="bnumero" min="0" max="9999" ></p>
+        <p> Estado:<select name="aestado" id="bestado" >
+        <optgroup label="NORDESTE">
+            <option value="CE">ceará</option>
+            <option value="PE">pernambuco</option>
+            <option value="RN">rio grande do norte</option>
+        </optgroup>
+        <optgroup label="SULDESTE">
+            <option value="RJ">rio de janeiro</option>
+            <option value="SP">são paulo</option>
+            <option value="MG">minas gerais</option>
+        </optgroup>
+        </select>
+        </p>
+       
+        <p>Cidade:<input type="text" name="acidade" id="bcidade" maxlength="40" size="20" placeholder="sua cidade" list="cidades" >
+        <datalist id="cidades">
+            <option value="juazeiro do norte"></option>
+            <option value="crato"></option>
+            <option value="barbalha"></option>
+            <option value="rio de janeiro "></option>
+            <option value="nova iguaçu"></option>
+            <option value="belford roxo"></option>
+         </datalist>
+
+         </p>
     
 </fieldset>
 
