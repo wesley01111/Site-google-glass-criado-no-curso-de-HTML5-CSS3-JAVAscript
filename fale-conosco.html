@@ -6,6 +6,18 @@
     <title>Tudo sobre google Glass</title>
 
     <link rel="stylesheet" type="text/css"     href="projeto-glass-html5/_css/style.css">
+
+    <link rel="stylesheet" type="text/css"
+    href="projeto-glass-html5\_css\form.css">
+
+    <script>
+        function calc_total() {
+            var quant = parseInt (document.getElementById('bquant').value);
+            tot = quant * 1500;
+            document.getElementById('bprec').value = tot;
+        }
+
+    </script>
     
 </head>
 <script src="projeto-glass-html5\_javascript\funcoes.js"></script>
@@ -40,22 +52,23 @@
                 <h3 class="direita">Atualizado em 01/Maio/2013</h3>
             </header>
         </article>
-<form>
+<form method="usuario"  oninput="calc_total();">
     <fieldset id="identificação">
-<legend> Identificação do Usuário</legend>
-    <p> Nome:<input type="text" name="anome" id="bnome"size="20"maxlength="30" placeholder="Nome completo"> </p>
-    <p>Senha:<input type="password" name="asenha" id="bsenha" size="8" maxlength="8" placeholder="8 dígitos">
-    <p> E-mail:<input type="email" name="aimail" id="bimail" placeholder="@gmail.com"></p>
+        <legend> Identificação do Usuário</legend>
+        <p> Nome:<input type="text" name="anome" id="bnome"size="20"maxlength="30" placeholder="Nome completo"> </p>
+     <p>Senha:<input type="password" name="asenha" id="bsenha" size="8" maxlength="8" placeholder="8 dígitos">
+        <p> E-mail:<input type="email" name="aimail" id="bimail" placeholder="@gmail.com"></p>
+        <p> Data de Nascimento:<input type="date"       name="adata" id="bdata"></p>
    <fieldset id="sexo">  
         <legend>Sexo:</legend>
         <input type="radio" name="asex" id="bmasc">  <label for="bmasc"> Masculino</label><br>
         <input type="radio" name="asex" id="bfem"> <label for="bfem">Feminino</label>
-    </fieldset >
-    <p> Data de Nascimento:<input type="date" name="adata" id="bdata"></p>
-</fieldset>
+        </fieldset >
+       
+    </fieldset>
 
-<fieldset id="endereço">
-    <legend> Endereço do Usuário</legend>
+    <fieldset id="endereço">
+        <legend> Endereço do Usuário</legend>
         <p>Logradouro:<input type="text" name="alogra" id="blogra" size="10" placeholder="Rua,Beco,Numero,Bairro" ></p>
         <p>Número: <input type="number" name="
             anumero" id="bnumero" min="0" max="9999" ></p>
@@ -67,7 +80,7 @@
         </optgroup>
         <optgroup label="SULDESTE">
             <option value="RJ">rio de janeiro</option>
-            <option value="SP">são paulo</option>
+            <option value="SP" >são paulo</option>
             <option value="MG">minas gerais</option>
         </optgroup>
         </select>
@@ -75,7 +88,7 @@
        
         <p>Cidade:<input type="text" name="acidade" id="bcidade" maxlength="40" size="20" placeholder="sua cidade" list="cidades" >
         <datalist id="cidades">
-            <option value="juazeiro do norte"></option>
+            <option value="juazeiro do norte"  ></option>
             <option value="crato"></option>
             <option value="barbalha"></option>
             <option value="rio de janeiro "></option>
@@ -85,24 +98,24 @@
 
          </p>
     
-</fieldset>
+    </fieldset>
 
-<fieldset id="msg">
-    <legend> Mensagem do Usuário</legend>
-        <p> Grau de Urgência:</p>
-        <p> Mensagem:</p>
-</fieldset>
+    <fieldset id="msg">
+     <legend> Mensagem do Usuário</legend>
+        <p> Grau de Urgência: <em>   Min  </em><input type="range" name="aurg" id="burg" min="0" max="100"  step="10"> <em>  máx </em> </p>
+        <p> Mensagem: <textarea  name="amsg" id="bmsg" cols="50" rows="5" placeholder="Digite sua mensagem..." ></textarea>  </p>
+    </fieldset>
 
-<fieldset id="quantidade">
-    <legend>Quero um Google Glass Gostaria de adquirir um Google Glass quando disponível</legend>
-    
-        <p> Cor:</p>
-        <p> Quantidade:</p>
-        <p> Preço Total: R$</p>
-</fieldset>
+    <fieldset id="quantidade">
+     <legend>Quero um Google Glass </legend>
+     <p> Gostaria de adquirir um Google Glass quando disponível <input type="checkbox" name=" aquero"        id="bquero" ></p>
+        <p> Cor:<input type="color" name="acor" id="bcor" value="#0000FF"></p>
+        <p> Quantidade: <input type="number" name="aquant" id="bquant" min="0" max="6" value="0"> </p>
+        <p> Preço Total: R$ <input type="text" name="aprec" id="bprec" placeholder="Total a pagar"> </p>
+    </fieldset>
 
 
-[BOTÃO ENVIAR]
+    <input type="image" name="aenv" src="projeto-glass-html5/_imagens/botao-enviar.png">
 </form>
 
 <footer id="rodape">
