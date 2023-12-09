@@ -212,3 +212,18 @@ header#cabeçalho-artigo h3.direita{
     text-align: right;
     color:#606060 ;
 }
+
+ video#film1 {
+    display: block;
+    position: relative;
+    left: 65px;
+    top: -5px;
+    width: 475px;
+}
+video#film2 {
+    display: block;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 340px;
+}
